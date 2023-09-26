@@ -3,7 +3,7 @@
 [Advent of Code 2015](https://adventofcode.com/2015) solutions in C
 
 - [x] Day 01
-- [ ] Day 02
+- [x] Day 02
 - [ ] Day 03
 - [ ] Day 04
 - [ ] Day 05
