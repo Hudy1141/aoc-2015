@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
     const char delim[2] = "x";
     char *token;
 
-    int lenght;
+    int length;
     int width;
     int height;
 
@@ -45,7 +45,7 @@ int main(int argc, char *argv[])
         fgets(str, 9, f);
 
         token = strtok(str, delim);
-        lenght = atoi(token);
+        length = atoi(token);
 
         token = strtok(NULL, delim);
         width = atoi(token);
@@ -53,16 +53,16 @@ int main(int argc, char *argv[])
         token = strtok(NULL, delim);
         height = atoi(token);
 
-        total_paper += paper(lenght, width, height);
-        total_ribbon += ribbon(lenght, width, height);
+        total_paper += paper(length, width, height);
+        total_ribbon += ribbon(length, width, height);
     }
 
     fclose(f);
 
-    //How many total square feet of wrapping paper should they order?
+    // How many total square feet of wrapping paper should they order?
     printf("Paper: %d\n", total_paper);
 
-    //How many total feet of ribbon should they order?
+    // How many total feet of ribbon should they order?
     printf("Ribbon: %d\n", total_ribbon);
 
     return 0;
